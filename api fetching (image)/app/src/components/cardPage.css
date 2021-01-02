@@ -1,0 +1,35 @@
+.navbar-nav{
+	list-style: none;
+	background: gray;
+	position: relative;
+    margin : 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.navbar-nav .nav-item {
+	position: relative;
+	display: inline;
+	padding: 10px 10px;
+
+}
+
+.navbar-nav .nav-item a{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	color: #f1f1f1;
+}
+
+.navbar-nav .nav-item:hover{
+	background: #eee;
+	border-radius: 10px;
+
+}
+.navbar-nav .nav-item a:hover{
+		color: black;
+}
+
+.form-control {
+	padding: 8px 5px;
+}

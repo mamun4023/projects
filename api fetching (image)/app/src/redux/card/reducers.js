@@ -10,7 +10,7 @@ const reducer = (state = initialState, action)=> {
 				...state,
 				BuyProducts  : state.BuyProducts + 1
 			}
-
+          
 		default:
 			return state
 	}

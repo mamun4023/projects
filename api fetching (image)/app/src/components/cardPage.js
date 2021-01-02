@@ -1,15 +1,25 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {buy} from '../redux';
-
+import './cardPage.css'
 function Cardpage(props){
 
 	return(
 		<>
 
-		  <h3> {props.BuyProducts} </h3>
 
+		 	
+		 		<ul className = 'navbar-nav'>
+		 			<li className= "nav-item">  <a className = "nav-link" href = "#" > Home </a> </li>
+		 			<li className= "nav-item">  <a className = "nav-link" href = "#"  >Service </a> </li>
+		 			<li className= "nav-item">  <a className = "nav-link" href = "#"> Products </a> </li>
+		 			<li className= "nav-item">  <a className = "nav-link" href = "#"> card - {props.BuyProducts} </a> </li>
+		 			<li className= "nav-item">  <a className = "nav-link" href = "#" > </a> </li>
+		 		
+		 		</ul>
+		 	
 		 
+
             
 		</>
 		)

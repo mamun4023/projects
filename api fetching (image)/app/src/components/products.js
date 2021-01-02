@@ -6,7 +6,6 @@ import {connect} from 'react-redux';
 import {buy} from '../redux';
 
 
-
 function Product(props){
 
 const [images, setImage] = useState([]);
@@ -26,7 +25,7 @@ useEffect(()=> {
 		     	   	 <div className = "card">
 		     	       <img src = {image.url}  />
 		     	   
-		     	         <button onClick = {props.buy}  > add </button>
+		     	         <button className = "btn btn-primary" onClick = {props.buy}  > add </button>
 		     	        <p> {image.title} </p>
 
 		     	 	 </div>
