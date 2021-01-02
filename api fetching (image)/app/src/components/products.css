@@ -20,12 +20,20 @@
 	box-shadow: 2px 2px 50px gray;
 }
 
+.card h3{
+	visibility: hidden;
+}
+
 
 
 
  .card:hover {
  	box-shadow: 2px 2px 10px gray;
  	cursor: pointer;
+ }
+
+ .card:hover h3{
+ 	visibility: visible;
  }
 
 

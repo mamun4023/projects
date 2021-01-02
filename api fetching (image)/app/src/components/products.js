@@ -20,7 +20,7 @@ useEffect(()=> {
 		     	   	 <div className = "card">
 		     	       <img src = {image.url}  />
 		     	   
-		     	        <h3> Product Name </h3>
+		     	         <h3> Add Card </h3>
 		     	        <p> {image.title} </p>
 
 		     	 	 </div>
