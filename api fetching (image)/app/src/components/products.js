@@ -1,7 +1,13 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import './products.css'
-function Product(){
+
+import {connect} from 'react-redux';
+import {buy} from '../redux';
+
+
+
+function Product(props){
 
 const [images, setImage] = useState([]);
 
@@ -20,7 +26,7 @@ useEffect(()=> {
 		     	   	 <div className = "card">
 		     	       <img src = {image.url}  />
 		     	   
-		     	         <h3> Add Card </h3>
+		     	         <button onClick = {props.buy}  > add </button>
 		     	        <p> {image.title} </p>
 
 		     	 	 </div>
@@ -34,5 +40,24 @@ useEffect(()=> {
 		)
 }
 
+ const mapToStateProps = state => {
+ 	return{
+ 		BuyProducts : state.BuyProducts
 
-export default Product;
+ 	}
+ }
+
+const mapToDispatchProps = dispatch => {
+	return{
+		buy : ()=> dispatch(buy())
+	}
+}
+
+
+
+export default connect(mapToStateProps, mapToDispatchProps)(Product);
+
+
+
+
+
