@@ -1,0 +1,24 @@
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+ul{
+	list-style-type: none; 
+	background: #eee;
+	padding: 20px;
+}
+
+ul li{
+	display: inline;
+	padding: 20px 15px;
+
+
+
+}
+
+ul li a{
+	font-size: 20px;
+	text-decoration: none;
+}
